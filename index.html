@@ -67,10 +67,11 @@
         }
 
         .trailer {
-            width: 100%;
+            width: 95%;
             position: sticky;
             top: 10px;
             border-radius: 10px;
+            margin-left: 80px;
 
 
         }
@@ -99,11 +100,14 @@
         .section2-2 {
             width: 95%;
             margin-left: 80px;
+            padding: 0;
             /* height: 200px; */
             /* background-color: yellow; */
-            overflow: scroll;
+            overflow-y: unset;
+            overflow-x: scroll;
             cursor: pointer;
             transition: all 0.5s ease;
+            /* background: white; */
         }
 
 
@@ -137,18 +141,22 @@
 
         .movies {
             min-width: 150px;
+            overflow-y: unset;
+            padding: 10px;
             /* height: 90%; */
         }
 
         .section2-3 {
             min-width: 150px;
-            overflow: scroll;
+            overflow-x: scroll;
+            overflow-y: unset;
             cursor: pointer;
             transition: all 0.5s ease;
         }
         .section2-4 {
             min-width: 150px;
-            overflow: scroll;
+            overflow-x: scroll;
+            overflow-y: unset;
             cursor: pointer;
             transition: all 0.5s ease;
             position: relative;
@@ -349,6 +357,12 @@
         .love{
             margin-left: 80px;
         }
+        .text{
+            margin-left: 80px;
+        }
+        .sports{
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -358,7 +372,7 @@
             <div class="top d-flex">
                 <img src="logo.png" width="80px" class="ht p-2" alt="">
             </div>
-            <div class="down mx-4 d-flex flex-column align-items-start justify-content-center gap-2">
+            <div class="down mx-4 d-flex flex-column align-items-start justify-content-center gap-1">
                 <div class="home d-flex align-items-center justify-content-center icon">
                     <i class="fa-solid fa-house fs-6"></i>
                     <p class="p-tag fs-5 mt-3">Home</p>
@@ -422,7 +436,7 @@
                         <button class="button-1 mt-2 love"><i class="fa-solid fa-play mx-3"></i>Watch</button>
                     </div>
                     <h1 class="text-light fs-2 mt-3 text">Latest Releases</h1>
-                    <div class="section2-2 d-flex gap-5 mt-4">
+                    <div class="section2-2 d-flex gap-5">
                         <div class="movies mx-2">
                             <img src="avesham.webp" style="min-width: 100%;height: 300px;border-radius: 15px;">
                         </div>
